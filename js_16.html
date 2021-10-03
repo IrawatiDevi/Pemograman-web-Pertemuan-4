@@ -1,0 +1,36 @@
+<html>
+<head><title>Latihan Perulangan III(<Do-While></Do-While></title></head>
+<body>
+<script language="JavaScript"><!--menyembunyikan script dan browser nonfunction pass()
+{
+var coba = 1;
+do
+{
+p = prompt("Tuliskan password dengan benar", "");
+if (p=="Amikom")
+{
+    alert("Selamat Datang Friends");
+    window.open("contoh perulangan for.html");
+    break;
+}
+else
+{
+    alert("Password salah!!! Ulangi Lagi.");
+}
+if (coba==3)
+{
+    alert("maaf, kesempatan anda hanya 3 kali");
+    history.go(-1);
+}
+coba=coba+1;
+}
+while (coba<=3)
+}
+
+// akhir dari penyembunyian-->
+</script>
+<form method="post">
+<input type="button" value="Password" onclick="pass()">
+</form>
+</body>
+</html>
